@@ -1,0 +1,8 @@
+log_reports: false
+plot_feature: true
+custom_thresholds: null
+thresholds_ds_name: "test_ds" # test_ds | golden_ds | full_test_ds
+thresholds_metric: "f1_w" # precision | recall | accuracy | fbeta | f1_w
+min_thr: 0.05
+max_thr: 0.95
+step_thr: 0.01

@@ -1,0 +1,6 @@
+main_prompt_name: "main_prompt.j2"
+synthetic_ds_prompt_name: "synthetic_ds_prompt.j2"
+max_parallel: 10
+max_retries: 5
+initial_delay: 1
+backoff_factor: 2

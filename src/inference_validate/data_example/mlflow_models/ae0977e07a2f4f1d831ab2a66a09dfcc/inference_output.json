@@ -1,0 +1,49 @@
+[
+  {
+    "message_id": "/home/eshmelev/anti_phishing/src/inference_validate/data/inference_emls/1755802200_48.eml",
+    "sentences": [
+      "Документ по антимонопольному делу Заявителю: АО \"Международный аэропорт Шереметьево\"",
+      "Федеральная антимонопольная служба направляет Вам следующий документ: № ГМ//25 от 02.07.2025 Вам необходимо ознакомиться с данным документом (см. вложение).",
+      "Данное письмо требует подтверждения прочтения.",
+      "Пожалуйста, после ознакомления с текстом документа, отправьте подтверждение о получении письма.",
+      "Отправить подтверждение Данный адрес электронной почты не предназначен для приема входящих обращений.",
+      "При необходимости просим направить Ваше обращение на электронный почтовый адрес: delo@fas.gov.ru"
+    ],
+    "predicted_features": [
+      "Personal data requests",
+      "Work with documents",
+      "Government impersonation",
+      "Attachment requests"
+    ]
+  },
+  {
+    "message_id": "/home/eshmelev/anti_phishing/src/inference_validate/data/inference_emls/1755802200_67.eml",
+    "sentences": [
+      "Добрый день!",
+      "Меня зовут Федин Марк, руководитель проектов ГК Камский Бекон.",
+      "Мы сейчас начинаем проект по развертыванию подразделения по внутреннему аудиту и нуждаемся в консультационной поддержке.",
+      "Хотели бы получить коммерческое предложение на сопровождение."
+    ],
+    "predicted_features": [
+      "Product offers",
+      "Generic greetings",
+      "Sender identification"
+    ]
+  },
+  {
+    "message_id": "/home/eshmelev/anti_phishing/src/inference_validate/data/inference_emls/1751387580_4412.eml",
+    "sentences": [
+      "Please Confirm Password WARNING",
+      "Your password for ( ismadi.jumat@mindef.gov.bn ) is Set to expire today.",
+      "to continue using the same password, Please click the button below to Keep using the same password.",
+      "KEEP CURRENT PASSWORD ©",
+      "This is an automatic Message from Mail Server ..."
+    ],
+    "predicted_features": [
+      "Urgency/threats",
+      "Service notifications",
+      "Personal data requests",
+      "Link click requests"
+    ]
+  }
+]

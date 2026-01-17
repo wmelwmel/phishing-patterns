@@ -1,0 +1,10 @@
+run_id: "347116ed77b148898f22032eca27a142"
+use_cuda: false
+model_dirname: "setfit_model"
+model_name: "setfit_model.onnx"
+opset: 18
+
+validate_export: true
+input_text_example:
+  - Hello, user.
+  - Объем выручки 1,5 млрд. руб

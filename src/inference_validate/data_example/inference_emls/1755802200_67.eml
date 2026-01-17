@@ -1,0 +1,56 @@
+Received: from exch01.bdo.ru (172.27.1.60) by exch02.bdo.ru (172.27.1.61) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.1.2507.37 via Mailbox
+ Transport; Mon, 21 Jul 2025 13:36:11 +0300
+Received: from MAILGW.BDO.RU (172.27.1.62) by EXCH01.bdo.ru (172.27.1.60) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.1.2507.37; Mon, 21 Jul
+ 2025 13:36:11 +0300
+Received: from forward102d.mail.yandex.net ([178.154.239.213])
+	by MAILGW.BDO.RU stage1 with esmtps 
+	(Exim MailCleaner) 
+	id 1udns5-0000000064h-2d6S 
+	for <reception@unicon.ru> 
+	from <mifedin@kambekon.ru>;
+	Mon, 21 Jul 2025 13:35:49 +0300
+Received: from mail-nwsmtp-mxback-production-main-74.klg.yp-c.yandex.net (mail-nwsmtp-mxback-production-main-74.klg.yp-c.yandex.net [IPv6:2a02:6b8:c42:2bce:0:640:468d:0])
+	by forward102d.mail.yandex.net (Yandex) with ESMTPS id EDB24C00C7
+	for <reception@unicon.ru>; Mon, 21 Jul 2025 13:35:47 +0300 (MSK)
+Received: from mail.yandex.ru (2a02:6b8:c43:92b:0:640:685a:0 [2a02:6b8:c43:92b:0:640:685a:0])
+	by mail-nwsmtp-mxback-production-main-74.klg.yp-c.yandex.net (mxback/Yandex) with HTTPS id hZOvRKCLimI0-6d2lZ9FR;
+	Mon, 21 Jul 2025 13:35:47 +0300
+Received: by mail-sendbernar-production-main-41.klg.yp-c.yandex.net (sendbernar/Yandex) with HTTPS id e0ecd688c4c52e77f17de7c0a6ce0721;
+	Mon, 21 Jul 2025 13:35:47 +0300
+From: =?utf-8?B?0JzQsNGA0Log0KTQtdC00LjQvQ==?= <mifedin@kambekon.ru>
+To: =?utf-8?B?0JrQsNC90YbQtdC70Y/RgNC40Y8=?= <reception@unicon.ru>
+Subject: =?utf-8?B?0JLQvdGD0YLRgNC10L3QvdC40Lkg0LDRg9C00LjRgg==?=
+Thread-Topic: =?utf-8?B?0JLQvdGD0YLRgNC10L3QvdC40Lkg0LDRg9C00LjRgg==?=
+Thread-Index: AQHb+itHmhem6ovcd0K2AiDaBo5ISA==
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Mon, 21 Jul 2025 13:35:47 +0300
+Message-ID: <1363261753094123@mail.yandex.ru>
+Content-Language: ru-RU
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AuthSource: EXCH01.bdo.ru
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	a55c80e7-7af0-4cf6-e785-08ddc8426958
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-exchange-organization-originalclientipaddress: 172.27.1.62
+x-ms-exchange-organization-originalserveripaddress: 172.27.1.60
+x-mailer: Yamail [ http://yandex.ru ] 5.0
+Content-Type: text/plain; charset="utf-8"
+Content-ID: <64CCD28594B1274491E15085B84515E5@bdo.ru>
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+
+0JTQvtCx0YDRi9C5INC00LXQvdGMISDQnNC10L3RjyDQt9C+0LLRg9GCINCk0LXQtNC40L0g0JzQ
+sNGA0LosINGA0YPQutC+0LLQvtC00LjRgtC10LvRjCDQv9GA0L7QtdC60YLQvtCyINCT0Jog0JrQ
+sNC80YHQutC40Lkg0JHQtdC60L7QvS4g0JzRiyDRgdC10LnRh9Cw0YEg0L3QsNGH0LjQvdCw0LXQ
+vCDQv9GA0L7QtdC60YIg0L/QviDRgNCw0LfQstC10YDRgtGL0LLQsNC90LjRjiDQv9C+0LTRgNCw
+0LfQtNC10LvQtdC90LjRjyDQv9C+INCy0L3Rg9GC0YDQtdC90L3QtdC80YMg0LDRg9C00LjRgtGD
+INC4INC90YPQttC00LDQtdC80YHRjyDQsiDQutC+0L3RgdGD0LvRjNGC0LDRhtC40L7QvdC90L7Q
+uSDQv9C+0LTQtNC10YDQttC60LUuINCl0L7RgtC10LvQuCDQsdGLINC/0L7Qu9GD0YfQuNGC0Ywg
+0LrQvtC80LzQtdGA0YfQtdGB0LrQvtC1INC/0YDQtdC00LvQvtC20LXQvdC40LUg0L3QsCDRgdC+
+0L/RgNC+0LLQvtC20LTQtdC90LjQtS4NCg==

@@ -1,0 +1,19 @@
+hnsw_params:
+  hnsw_index_name: "hnsw_index_upd_FULL.bin"
+  space: "cosine"
+  M: 48
+  ef_construction: 150
+  ef: 3000
+  k_neighbors: 150
+
+
+clustering_params:
+  eps: 0.1
+  min_samples: 4
+  auto_optimize: false
+  eps_range: [0.1, 1.1]
+  eps_step: 0.025
+  min_samples_range: [3, 13]
+  top_n_results: 1000
+  recalculate_index: false
+  max_samples_per_cluster: 200

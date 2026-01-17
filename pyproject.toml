@@ -1,0 +1,168 @@
+[tool.poetry]
+name = "phishing-labelling"
+version = "1.0.0"
+description = "Phishing labelling service"
+authors = ["eshmelev ..."]
+packages = [{include = "src"}]
+
+[[tool.poetry.source]]
+name = "..."
+url = "..."
+priority = "supplemental"
+
+[[tool.poetry.source]]
+name = "..."
+url = "..."
+priority = "supplemental"
+
+[tool.poetry.dependencies]
+python = "3.10.11"
+numpy = "^1.26.0"
+py7zr = "^1.0.0"
+tqdm = "^4.67.1"
+chardet = "^5.2.0"
+pyzipper = "^0.3.6"
+langdetect = "^1.0.9"
+stanza = "^1.10.1"
+pyarrow = "^20.0.0"
+boto3 = "^1.39.2"
+accelerate = ">=0.26.0"
+sentence-transformers = "^4.1.0"
+plotly = "^6.2.0"
+openai = "^1.93.0"
+omegaconf = "^2.3.0"
+hnswlib = "^0.8.0"
+jinja2 = "^3.1.6"
+scikit-multilearn = "^0.2.0"
+evaluate = "^0.4.5"
+setfit = "^1.1.2"
+torch = "2.7.1"
+scikit-learn = "1.6.1"
+datasets = "^4.0.0"
+mlflow = "^3.2.0"
+optuna = "^4.5.0"
+xgboost = "^3.0.5"
+catboost = "^1.2.8"
+shap = "^0.48.0"
+onnx = ">=1.16,<1.17"
+onnxconverter-common = ">=1.16,<2.0"
+skl2onnx = ">=1.19,<2.0"
+protobuf = ">=3.20.2,<4.0"
+onnxruntime = "1.23.1"
+onnxscript = ">=0.5.4,<0.6"
+langid = "1.1.6"
+
+[tool.poetry.group.labelling_service]
+optional = true
+
+[tool.poetry.group.labelling_service.dependencies]
+ipython = "*"
+setuptools = "^76.1.0"
+pydantic = "^2.11.1"
+pydantic-settings = "^2.8.1"
+loguru = "*"
+
+[tool.poetry.group.lab]
+optional = true
+
+[tool.poetry.group.lab.dependencies]
+pandas = "^1.5.3"
+pyzmq = "^26.0.3"
+python-dotenv = "^0.21.1"
+jupyter = "*"
+matplotlib = "*"
+seaborn = "*"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+types-pyyaml = "^6.0.12.20240808"
+pytest = "*"
+pytest-dotenv = "*"
+pytest-cov = "*"
+requests = "^2.32.3"
+ipykernel = "^6.29.5"
+
+[tool.poetry.group.lint.dependencies]
+pre-commit = "*"
+mypy = "1.16.1"
+ruff = "^0.11.6"
+nbqa = "^1.0.0"
+types-requests = "^2.32"
+pydantic = "^2.11.1"
+
+
+[tool.ruff]
+line-length = 120 # black
+fix = true
+
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle
+    "F", # pyflakes
+    "I", # isort
+    "D", # pydocstyle
+]
+ignore = [
+    "E203", # Whitespace before ':'
+    "E211", # Whitespace before '('
+    "D100", # Missing docstring in public module
+    "D101", # Missing docstring in init
+    "D102", # Missing docstring in public class
+    "D103", # Missing docstring in public function
+    "D104", # Missing docstring in public package
+    "D105", # Missing docstring in magic method
+    "D106", # Missing docstring in public nested class
+    "D107", # Missing docstring in public package
+    "D203", # 1 blank line required before class docstring (found 0)
+    "D205", # 1 blank line required between summary line and description
+    "D212", # Multi-line docstring summary should start at the first line
+    "D301", # Use `r"""` if any backslashes in a docstring
+    "D400", # First line should end with a period
+    "D401", # First line should be in imperative mood
+    "D415", # First line should end with a period, question mark, or exclamation point
+    "D417", # Missing argument descriptions in the docstring 
+]
+
+[tool.ruff.lint.per-file-ignores]
+"!src/**.py" = [
+    "E", # pycodestyle
+    "F", # pyflakes
+    "I", # isort
+    "D", # pydocstyle
+]
+
+[tool.mypy]
+plugins = [
+    "pydantic.mypy"
+]
+follow_imports = "silent"
+disallow_untyped_defs = true
+ignore_missing_imports = true
+exclude=".git,./venv,./build/.*test*"
+no_namespace_packages = true
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = false
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+addopts = "--capture=tee-sys -q --cov=src"
+log_cli = 1
+# env_files = [".env"]
+log_cli_level = "DEBUG"
+testpaths = ["tests"]
+# asyncio_mode="auto"
+log_format = "%(asctime)s %(name)s %(levelname)s %(message)s"
+
+[tool.poetry.scripts]
+train = "src.model.train:main"
+onnx_export = "src.setfit_onnx.export_onnx_pipeline:main"

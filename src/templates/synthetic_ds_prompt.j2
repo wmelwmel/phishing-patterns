@@ -1,0 +1,64 @@
+You are a cybersecurity / phishing detection expert. 
+You will see a list of ALL fraud indicators (features) with their descriptions and illustrative examples.  
+Your task is to generate diverse short sentence examples ((not paragraphs)) ONLY for ONE selected indicator.  
+
+
+### ALL AVAILABLE INDICATORS:
+{% for f in all_features %}
+- ID: {{ f.id }}
+  Name: {{ f.name }}
+  Description: {{ f.description }}
+  Examples:
+  {% for ex in f.examples -%}
+    - {{ ex }}
+  {% endfor %}
+{% endfor %}
+
+---
+
+
+### TARGET INDICATOR:
+You must generate examples ONLY for the following indicator:
+ID: {{ target_feature.id }}
+Name: {{ target_feature.name }}  
+Description: {{ target_feature.description }}  
+
+
+### RULES:
+1. Generate {{ n_per_language }} diverse short SENTENCES/PHRASES in ENGLISH and {{ n_per_language }} diverse short SENTENCES/PHRASES in RUSSIAN that each clearly exhibit the core target fraud pattern described above.
+2. Each sentence must contain **only this indicator** and MUST NOT contain elements of other indicators.  
+   - For example, if the indicator is "Sender identification", DO NOT add greetings or links.  
+   - If the indicator is "Generic greetings", do NOT add sender names or links.  
+   - If the indicator is "Link click requests", use the placeholder "[link]" instead of any real URL.  
+   - For "Work with Documents": Examples MUST describe document-related actions without mentioning attachments. Forbidden words: "attached", "attachment", "see attached", "file attached".  
+   - For "Attachment Requests": Examples MUST explicitly reference attachments. Keep them simple and direct, without references to links, greetings, or document tasks beyond "check/review/open attached file".
+   - For "Financial operations", DO NOT mention explicit money amounts. Use only generic financial actions (e.g., transfer funds, process a payment). Any example that specifies a numeric sum belongs to "Explicit money amounts", not "Financial operations".
+3. Sentences may be short or long, must be single sentences or short phrases. No paragraphs or multi-sentence texts.
+4. Each example must clearly demonstrate ONLY the target indicator.  
+5. Focus on maximal diversity: vary vocabulary, structure, level of directness, and scenarios while keeping the same underlying pattern. Avoid trivial near-duplicates or repeated names.
+6. Output ONLY a single valid JSON object and NOTHING ELSE. The JSON MUST have exactly one key: the feature name (use the exact value from "Feature name") and its value must be a JSON array of sentences (strings). The array should contain both EN and RU sentences (total length = 2 * {{ n_per_language }}), order is not important.
+7. Example of required JSON structure (use double quotes exactly as JSON requires):
+   {
+     "{{ target_feature.name }}": {
+       "en": [
+         "english_sentence_1",
+         "english_sentence_2",
+         "..."
+       ],
+       "ru": [
+         "русское_предложение_1",
+         "русское_предложение_2",
+         "..."
+       ]
+     }
+   }
+
+8. Do NOT include any additional text, explanations, or metadata. Only return the JSON object.
+9. Do NOT use special spacing characters (such as \u202f, non-breaking spaces, thin spaces). Use only regular ASCII space " " between numbers and currency symbols.
+10. Do NOT add numbering, bullet points, or any index markers (like "#1", "1.", "-") in the sentences. Each array element must be a clean sentence only.
+11. Do NOT generate trivial near-duplicates. Avoid using the same sentence structure repeatedly. Vary verbs, nouns, phrasing, sentence types (imperative, statement, question), and contexts.
+
+KEY CRITICAL REQUIREMENTS:
+- Each sentence must clearly contain the pattern (semantic match is sufficient).
+- Use different verbs, pronouns, formats (question, imperative, statement), and different contexts to maximize diversity.
+- Do not output whole email threads, single-line sentences or short phrases only.

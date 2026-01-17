@@ -1,0 +1,99 @@
+encoder:
+  model_name:
+    values:
+      - "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+      - "Lajavaness/bilingual-embedding-small"
+      - "cointegrated/LaBSE-en-ru"
+      - "sentence-transformers/LaBSE"
+      - "sentence-transformers/distiluse-base-multilingual-cased-v1"
+      - "intfloat/multilingual-e5-small"
+      - "BAAI/bge-small-en-v1.5"
+  body_learning_rate:
+    low: 1e-6
+    high: 1e-3
+    log: true
+  l2_weight:
+    low: 1e-6
+    high: 1e-2
+    log: true
+  warmup_proportion:
+    low: 0.0
+    high: 0.9
+  batch_size:
+    values: [16, 32, 64]
+
+head:
+  logreg:
+    C:
+      low: 0.01
+      high: 10.0
+      log: true
+    solver:
+      values: ["lbfgs", "liblinear", "newton-cg", "sag", "saga"]
+    penalty:
+      lbfgs: ["l2", null]
+      liblinear: ["l1", "l2"]
+      newton-cg: ["l2", null]
+      newton-cholesky: ["l2", null]
+      sag: ["l2", null]
+      saga: ["l1", "l2", null]
+    max_iter:
+      low: 50
+      high: 500
+    fit_intercept: 
+      values: [true, false]
+    class_weight:
+      values: [null, "balanced"]
+
+  catboost:
+    iterations:
+      low: 300
+      high: 1500
+      step: 100
+    learning_rate:
+      low: 0.005
+      high: 0.3
+      log: true
+    depth:
+      low: 4
+      high: 10
+    l2_leaf_reg:
+      low: 1.0
+      high: 10.0
+      log: true
+    border_count:
+      low: 32
+      high: 254
+    bagging_temperature:
+      low: 0.0
+      high: 1.0
+    random_strength:
+      low: 0.0
+      high: 2.0
+    auto_class_weights:
+      values: [null, "Balanced"]
+    eval_metric:
+      values: ["F1", "Accuracy"]
+
+  rf:
+    n_estimators:
+      low: 100
+      high: 500
+      step: 50
+    max_depth:
+      low: 5
+      high: 20
+    min_samples_split:
+      low: 2
+      high: 20
+    min_samples_leaf:
+      low: 1
+      high: 10
+    max_features:
+      values: ["sqrt", "log2"]
+    bootstrap:
+      values: [true, false]
+    criterion:
+      values: ["gini", "entropy", "log_loss"]
+    class_weight:
+      values: [null, "balanced", "balanced_subsample"]

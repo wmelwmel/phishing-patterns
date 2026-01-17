@@ -1,0 +1,39 @@
+repos:
+  - repo: local
+    hooks:
+      # ruff for python files
+      - id: ruff
+        name: ruff
+        entry: ruff check --force-exclude
+        language: system
+        types: [python]
+
+      - id: ruff-format
+        name: ruff-format
+        entry: ruff format --force-exclude
+        language: system
+        types: [python]
+
+      # mypy for python files
+      - id: mypy
+        name: mypy
+        entry: mypy
+        language: system
+        types: [python]
+        args: [--config-file=pyproject.toml]
+        exclude: "tests/"
+
+      # ruff for notebooks
+      - id: nbqa-ruff
+        name: nbqa-ruff
+        entry: nbqa "ruff check --force-exclude"
+        language: system
+        types: [jupyter]
+        exclude: "notebooks/chaos"
+
+      - id: nbqa-ruff-format
+        name: nbqa-ruff-format
+        entry: nbqa "ruff format --force-exclude"
+        language: system
+        types: [jupyter]
+        exclude: "notebooks/chaos"

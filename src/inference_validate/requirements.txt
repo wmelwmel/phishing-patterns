@@ -1,0 +1,13 @@
+pydantic-settings==2.10.1
+loguru==0.7.3
+numpy==1.26.4
+tqdm==4.67.1
+torch==2.7.1
+mlflow==3.2.0
+beautifulsoup4==4.13.4
+scikit-learn==1.6.1
+setfit==1.1.2
+stanza==1.10.1
+langid==1.1.6
+omegaconf==2.3.0
+catboost==1.2.8
